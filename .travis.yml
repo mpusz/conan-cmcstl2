@@ -54,19 +54,6 @@ matrix:
       env: GCC_VERSION=7 BUILD_TYPE=Debug
       addons: *gcc7
 
-    - os: linux
-      env: CLANG_VERSION=5.0 BUILD_TYPE=Release
-      addons: &clang5
-        apt:
-          sources:
-            - llvm-toolchain-trusty-5.0
-          packages:
-            - clang-5.0
-
-    - os: linux
-      env: CLANG_VERSION=5.0 BUILD_TYPE=Debug
-      addons: *clang5
-
 before_install:
   - |
     # Set compilers provided in matrix
