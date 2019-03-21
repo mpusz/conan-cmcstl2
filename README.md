@@ -5,7 +5,7 @@
 
 # conan-cmcstl2
 
-[conan-mpusz](https://bintray.com/mpusz/conan-mpusz) package for [Google Benchmark](https://github.com/google/benchmark) library.
+[conan-mpusz](https://bintray.com/mpusz/conan-mpusz) package for [C++ Extensions for Ranges](https://github.com/CaseyCarter/cmcstl2) library.
 
 The package generated with this **conanfile** can be found at [conan-mpusz](https://bintray.com/mpusz/conan-mpusz/cmcstl2%3Ampusz).
 
