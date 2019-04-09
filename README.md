@@ -1,5 +1,5 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?maxAge=3600)](https://raw.githubusercontent.com/mpusz/conan-cmcstl2/master/LICENSE)
-[![Travis CI](https://img.shields.io/travis/mpusz/conan-cmcstl2/master.svg?label=Travis%20CI)](https://travis-ci.org/mpusz/conan-cmcstl2)
+[![Travis CI](https://img.shields.io/travis/com/mpusz/conan-cmcstl2/master.svg?label=Travis%20CI)](https://travis-ci.com/mpusz/conan-cmcstl2)
 [![AppVeyor](https://img.shields.io/appveyor/ci/mpusz/conan-cmcstl2/master.svg?label=AppVeyor)](https://ci.appveyor.com/project/mpusz/conan-cmcstl2)
 [![Download](https://api.bintray.com/packages/mpusz/conan-mpusz/cmcstl2%3Ampusz/images/download.svg)](https://bintray.com/mpusz/conan-mpusz/cmcstl2%3Ampusz/_latestVersion)
 
