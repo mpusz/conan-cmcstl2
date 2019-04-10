@@ -12,5 +12,5 @@ if __name__ == "__main__":
             new_settings = settings
             new_settings["cppstd"] = std
             new_builds.append([new_settings, options, env_vars, build_requires])
-    builder.builds = filtered_builds
+    builder.builds = new_builds
     builder.run()
