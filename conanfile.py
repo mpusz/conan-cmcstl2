@@ -73,6 +73,9 @@ class CMCStl2Conan(ConanFile):
             self.cpp_info.cxxflags = ["--Xclang -fconcepts-ts"]
 
     def package_id(self):
-        del self.settings.cppstd
-        del self.settings.os
-        del self.settings.build_type
+        del self.info.settings.cppstd
+        del self.info.settings.os
+        del self.info.settings.build_type
+        del self.info.settings.compiler.libcxx
+        del self.info.settings.compiler.version
+        del self.info.settings.arch
