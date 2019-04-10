@@ -21,6 +21,7 @@
 # SOFTWARE.
 
 from conans import ConanFile, CMake, tools
+from conans.errors import ConanInvalidConfiguration
 
 class CMCStl2Conan(ConanFile):
     name = "cmcstl2"
