@@ -8,9 +8,9 @@ if __name__ == "__main__":
     cppstd = ["17", "20"]
     new_builds = []
     for settings, options, env_vars, build_requires, reference in builder.items:
-        for std in cppstd
+        for std in cppstd:
             new_settings = settings
             new_settings["cppstd"] = std
-             new_builds.append([new_settings, options, env_vars, build_requires])
+            new_builds.append([new_settings, options, env_vars, build_requires])
     builder.builds = filtered_builds
     builder.run()
