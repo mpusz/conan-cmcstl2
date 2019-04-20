@@ -66,16 +66,11 @@ class CMCStl2Conan(ConanFile):
         cmake.install()
 
     def package_info(self):
-        self.cpp_info.libs = tools.collect_libs(self)
         if self.settings.compiler == "gcc":
             self.cpp_info.cxxflags = ["-fconcepts"]
         else:
             self.cpp_info.cxxflags = ["--Xclang -fconcepts-ts"]
 
     def package_id(self):
-        del self.info.settings.cppstd
-        del self.info.settings.os
-        del self.info.settings.build_type
-        del self.info.settings.compiler.libcxx
-        del self.info.settings.compiler.version
-        del self.info.settings.arch
+        self.info.settings.clear()
+        self.info.settings.compiler = self.settings.compiler
