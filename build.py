@@ -26,7 +26,7 @@ if __name__ == "__main__":
             if settings["compiler.version"] == "7" and std == "20":
                 continue
             new_settings = copy.copy(settings)
-            new_settings["cppstd"] = std
+            new_settings["compiler.cppstd"] = std
             new_builds.append([new_settings, options, env_vars, build_requires])
     builder.builds = new_builds
     builder.run()
