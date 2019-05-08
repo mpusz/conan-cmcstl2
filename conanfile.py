@@ -25,7 +25,7 @@ from conans.errors import ConanInvalidConfiguration
 
 class CMCStl2Conan(ConanFile):
     name = "cmcstl2"
-    version = "2019.03.18"
+    version = "2019.04.26"
     description = "An implementation of C++ Extensions for Ranges"
     homepage = "https://github.com/CaseyCarter/cmcstl2"
     license = "https://github.com/CaseyCarter/cmcstl2/blob/master/LICENSE.txt"
@@ -36,7 +36,7 @@ class CMCStl2Conan(ConanFile):
     scm = {
         "type": "git",
         "url": "https://github.com/CaseyCarter/cmcstl2.git",
-        "revision": "fb1b65b006e5df4be205cf538e360f8d16cda3ca"
+        "revision": "0e4b9e839f054e5dd6be9dcd07c4d868d16502be"
     }
     generators = "cmake"
 
