@@ -31,7 +31,7 @@ class CMCStl2Conan(ConanFile):
     license = "https://github.com/CaseyCarter/cmcstl2/blob/master/LICENSE.txt"
     url = "https://github.com/mpusz/conan-cmcstl2"
     exports = ["LICENSE.md"]
-    settings = "cppstd", "os", "compiler", "build_type", "arch"
+    settings = "os", "compiler", "build_type", "arch"
     no_copy_source = True
     scm = {
         "type": "git",
@@ -51,7 +51,7 @@ class CMCStl2Conan(ConanFile):
     def configure(self):
         if self.settings.compiler != "gcc" and self.settings.compiler != "clang":
             raise ConanInvalidConfiguration("Library cmcstl2 is only supported for gcc and clang")
-        if self.settings.cppstd not in ["17", "gnu17", "20", "gnu20"]:
+        if self.settings.compiler.cppstd not in ["17", "gnu17", "20", "gnu20"]:
             raise ConanInvalidConfiguration("Library cmcstl2 requires at least C++17 support")
 
     def build(self):
