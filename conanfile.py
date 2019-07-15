@@ -69,7 +69,7 @@ class CMCStl2Conan(ConanFile):
         if self.settings.compiler == "gcc":
             self.cpp_info.cxxflags = ["-fconcepts"]
         else:
-            self.cpp_info.cxxflags = ["--Xclang -fconcepts-ts"]
+            self.cpp_info.cxxflags = ["-Xclang -fconcepts-ts"]
 
     def package_id(self):
         self.info.settings.clear()
