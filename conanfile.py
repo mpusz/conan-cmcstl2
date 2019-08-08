@@ -51,8 +51,8 @@ class CMCStl2Conan(ConanFile):
     def configure(self):
         if self.settings.compiler != "gcc" and self.settings.compiler != "clang":
             raise ConanInvalidConfiguration("Library cmcstl2 is only supported for gcc and clang")
-        if self.settings.compiler.cppstd not in ["17", "gnu17", "20", "gnu20"]:
-            raise ConanInvalidConfiguration("Library cmcstl2 requires at least C++17 support")
+        if self.settings.compiler.cppstd not in ["20", "gnu20"]:
+            raise ConanInvalidConfiguration("Library cmcstl2 requires C++20 support")
 
     def build(self):
         cmake = self._configure_cmake()
